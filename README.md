@@ -1,5 +1,5 @@
 # dotfiles
 
-Config files for zsh, bash, tmux etc.
+Config files for vim, tmux, bash, tmux etc.
 
 Plugins are managed using [vim-plug](https://github.com/junegunn/vim-plug).
