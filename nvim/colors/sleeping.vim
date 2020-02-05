@@ -88,7 +88,7 @@ call s:hi('Normal', s:palette.gray13, s:palette.black, '')
 set background=dark
 
 call s:hi('Constant', s:palette.gray05, [], 'bold')
-call s:hi('String', s:palette.yellow, [], '')
+call s:hi('String', s:palette.white, [], '')
 call s:hi('Number', s:palette.gray05, [], '')
 
 call s:hi('Identifier', s:palette.gray08, [], 'none')
