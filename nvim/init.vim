@@ -13,7 +13,8 @@ Plug 'cohama/lexima.vim'
 
 " language
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
-Plug 'supercollider/scvim'
+" Plug 'supercollider/scvim'
+Plug 'davidgranstrom/scnvim', { 'do': ':UpdateRemotePlugins' }
 
 " colorschemes
 Plug 'ewilazarus/preto'
@@ -53,7 +54,7 @@ set nostartofline                   " keep the cursor at the current column when
 set scrolloff=4                     " keep a distance of from the cursor when scrolling
 set wrap                            " wrap words
 set linebreak                       " break at word boundries for wrapped text
-set textwidth=80                    " be cool, old school 4:3 text width
+" set textwidth=80                    " be cool, old school 4:3 text width
 " set list                          " show unprintable characters
 " set relativenumber
 set number
@@ -70,7 +71,7 @@ set wildmenu                        " enhanced command line completion
 set wildignorecase                  " be smart case-sensitive
 set diffopt+=vertical               " use vertical diffs by default
 set laststatus=2                    " always display a status line
-" set autochdir                       " change to cwd of current file
+" set autochdir                     " change to cwd of current file
 set visualbell                      " turn off error beep/flash
 set regexpengine=0                  " use the improved regexpengine
 set timeoutlen=1000                 " shorter timeout lenght for keystrokes
@@ -85,10 +86,12 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab                       " use whitespace instead of tabs
 set shiftround                      " round indent to multiples of 'shiftwidth'
+" set nowrap
 
 " colorscheme/appearance
 set background=dark
 colorscheme sleeping
+" colorscheme obs
 
 " use par to format text
 if executable("par")
@@ -123,4 +126,3 @@ au BufNewFile,BufRead *.scd
  imap <down> <nop>
  imap <left> <nop>
  imap <right> <nop>
-
